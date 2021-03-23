@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FORMATADOR ABNT</title>
+		<style>
+			body {
+				font-family: "Times New Roman", Times, serif, Helvetica, sans-serif;
+				margin: auto;
+				height: 100%;
+			}
+			[class$="wrapper"] {
+				max-width: 30%;
+				margin: 3rem auto;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			button {
+				width: 45%;
+				height: 1.625rem;
+				border: none;
+				border-radius: 0.25rem;
+				margin: auto 0;
+			}
+			.textarea__wrapper button {
+				color: rgba(255, 255, 255, 0.712);
+				background-color: rgb(23, 0, 128);
+			}
+			.tests__wrapper button {
+				width: 30%;
+			}
+			.tests__wrapper button:nth-of-type(4) {
+				width: 100%;
+				margin: 1rem 0;
+			}
+			textarea {
+				height: 0;
+				width: 50%;
+			}
+			label {
+				width: 100%;
+			}
+			h1,
+			h2,
+			h3 {
+				text-align: center;
+			}
+			h3 {
+				background-color: gainsboro;
+				box-shadow: 0.125rem 0.125rem rgba(0, 0, 0, 0.2);
+				width: fit-content;
+				display: block;
+				margin: auto;
+				margin-top: 6rem;
+				cursor: pointer;
+			}
+			h3:active {
+				box-shadow: none;
+			}
+			@media (min-width: 426px) {
+				body {
+					width: 90%;
+					height: auto;
+					margin: auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1 style="background-color:Tomato;">
+			FORMATADOR PARA REFERÊNCIAS BIBLIOGRÁFICAS <br />
+			MODELO ABNT
+		</h1>
+		<div class="nome-formatado">
+			<h3></h3>
+		</div>
+		<div class="textarea__wrapper">
+			<label for="Nome">Nome</label>
+			<textarea name="Nome" id="nome"></textarea>
+			<button>Formatar</button>
+		</div>
+		<script src="index.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
